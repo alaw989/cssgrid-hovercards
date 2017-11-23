@@ -1,25 +1,79 @@
 .container {
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr;  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.bg-classes {
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.card-wrapper {
+    overflow: hidden;
+}
+
+.card-container {
+    position: relative;
+    -webkit-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+    &:hover {
+        -webkit-transform: scale(1.1, 1.1);
+                transform: scale(1.1, 1.1);
+    }
+}
+
+.card-overlay {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    -webkit-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+    &:hover {
+        opacity: 1;
+    }
+    h1 {
+        color: white;
+        text-align: center;
+    }
+    p {
+        color: white;
+        max-width: 75%;
+        text-align: center;
+    }
 }
 
 .card1 {
+    background-image: url('/img/stormtrooper.jpg');
     grid-column-start: 1;
     grid-column-end: 2;
-    width: 100%;
-    height: 100%;
 }
 
 .card2 {
+    background-image: url('/img/sabreguy.jpg');
     grid-column-start: 2;
     grid-column-end: 3;
-    width: 100%;
-    height: 100%;
 }
 
 .card3 {
+    background-image: url('/img/girl.jpg');
     grid-column-start: 3;
     grid-column-end: 4;
-    width: 100%;
-    height: 100%;
 }
