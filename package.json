@@ -6,17 +6,15 @@
   "dependencies": {
     "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
-    "gulp-sass": "^3.1.0"
+    "gulp-sass": "^3.1.0",
+    "jquery": "^3.2.1"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alaw989/sassgulp-setup.git"
-  },
-  "author": "",
+  "repository": "git+https://github.com/alaw989/sassgulp-setup.git",
+  "author": "alaw989 <alaw989@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/alaw989/sassgulp-setup/issues"
